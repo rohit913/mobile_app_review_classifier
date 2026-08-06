@@ -1,0 +1,10 @@
+{
+  "svm_accuracy": 0.696969696969697,
+  "svm_macro_f1": 0.6595549132328962,
+  "bert_category_accuracy": 0.7363636363636363,
+  "bert_category_macro_f1": 0.7074765023926939,
+  "bert_category_best_lr": 2e-05,
+  "bert_sentiment_accuracy": 0.7454545454545455,
+  "bert_sentiment_macro_f1": 0.6322531449406471,
+  "bert_sentiment_best_lr": 1e-05
+}

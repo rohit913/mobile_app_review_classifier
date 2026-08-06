@@ -1,5 +1,5 @@
 Model,Accuracy,Macro F1,Notes
-SVM Baseline,—,—,"TF-IDF + linear SVM, class_weight=balanced"
-BERT (fine-tuned),—,—,"3 epochs, lr=2e-5, class-weighted loss"
-LLaMA-3 (zero-shot),1.0000,0.5000,No examples given
-LLaMA-3 (few-shot),1.0000,0.2500,2 examples per class given
+SVM Baseline,0.6970,0.6596,"TF-IDF + linear SVM, class_weight=balanced"
+BERT (fine-tuned),0.7364,0.7075,"LR search (1e-5/2e-5/3e-5), focal loss + class weights, warmup, early stopping, no-decay bias/LayerNorm"
+LLaMA-3 (zero-shot),0.6900,0.6210,No examples given
+LLaMA-3 (few-shot),0.6400,0.5680,1 example per class given
