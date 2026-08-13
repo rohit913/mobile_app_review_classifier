@@ -1,0 +1,14 @@
+pandas
+numpy
+scikit-learn
+transformers
+torch
+shap
+lime
+groq
+python-dotenv
+google-play-scraper
+matplotlib
+seaborn
+tqdm
+streamlit
