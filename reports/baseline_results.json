@@ -1,10 +1,18 @@
 {
   "svm_accuracy": 0.696969696969697,
   "svm_macro_f1": 0.6595549132328962,
-  "bert_category_accuracy": 0.7363636363636363,
-  "bert_category_macro_f1": 0.7074765023926939,
+  "nb_accuracy": 0.603030303030303,
+  "nb_macro_f1": 0.5739806163039859,
+  "rf_accuracy": 0.6787878787878788,
+  "rf_macro_f1": 0.6063641992138078,
+  "bert_category_accuracy": 0.7212121212121212,
+  "bert_category_macro_f1": 0.6753887803220903,
   "bert_category_best_lr": 2e-05,
-  "bert_sentiment_accuracy": 0.7454545454545455,
-  "bert_sentiment_macro_f1": 0.6322531449406471,
-  "bert_sentiment_best_lr": 1e-05
+  "bert_sentiment_accuracy": 0.8090909090909091,
+  "bert_sentiment_macro_f1": 0.6768489619902246,
+  "bert_sentiment_best_lr": 1e-05,
+  "llama_zero_shot_accuracy": 0.69,
+  "llama_zero_shot_macro_f1": 0.621,
+  "llama_few_shot_accuracy": 0.64,
+  "llama_few_shot_macro_f1": 0.568
 }

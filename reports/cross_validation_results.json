@@ -1,0 +1,45 @@
+{
+  "n_folds": 5,
+  "n_reviews": 2200,
+  "note": "Stratified 5-fold over all 2,200 reviews. Within each fold, 10% of the training portion is held out for early stopping; the test fold is never seen during training.",
+  "bert": {
+    "per_fold_macro_f1": [
+      0.6916,
+      0.634,
+      0.7281,
+      0.6891,
+      0.6931
+    ],
+    "mean_macro_f1": 0.6872,
+    "std_macro_f1": 0.0302,
+    "mean_accuracy": 0.7418,
+    "per_class_mean_f1": {
+      "Bug Report": 0.7388,
+      "Feature Request": 0.5431,
+      "UX Feedback": 0.6044,
+      "Positive Praise": 0.8625
+    },
+    "per_class_std_f1": {
+      "Bug Report": 0.0224,
+      "Feature Request": 0.0803,
+      "UX Feedback": 0.0579,
+      "Positive Praise": 0.0181
+    }
+  },
+  "svm": {
+    "per_fold_macro_f1": [
+      0.6731,
+      0.6645,
+      0.6851,
+      0.6806,
+      0.6598
+    ],
+    "mean_macro_f1": 0.6726,
+    "std_macro_f1": 0.0095,
+    "mean_accuracy": 0.72
+  },
+  "single_split_comparison": {
+    "bert_macro_f1": 0.6754,
+    "svm_macro_f1": 0.6596
+  }
+}

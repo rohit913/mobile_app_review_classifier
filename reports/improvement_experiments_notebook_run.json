@@ -1,0 +1,180 @@
+{
+  "_method": "Selected on VALIDATION. Test figures reported for transparency but never used for selection. The delivered baseline is notebook 04's corrected checkpoint: test acc 0.7212, macro F1 0.6754 (0.6872 under cross-validation). Any 'vs baseline' delta printed in notebook 08 was differenced against the PRE-correction checkpoint (test acc 0.7364, macro F1 0.7079) and is therefore about 0.03 more negative; the raw experiment scores in this file are unaffected. Table 4 of Final_Report.md is the authoritative comparison.",
+  "_environment": "notebook kernel run",
+  "S0_threshold_tuned": {
+    "val_macro_f1": 0.6859,
+    "accuracy": 0.6818,
+    "macro_f1": 0.6132,
+    "per_class_f1": {
+      "Bug Report": 0.6797,
+      "Feature Request": 0.5231,
+      "UX Feedback": 0.4255,
+      "Positive Praise": 0.8245
+    }
+  },
+  "S1_loss_ablation": {
+    "ce_plain": {
+      "val_macro_f1": 0.6337,
+      "accuracy": 0.7121,
+      "macro_f1": 0.6377,
+      "per_class_f1": {
+        "Bug Report": 0.7064,
+        "Feature Request": 0.3913,
+        "UX Feedback": 0.6423,
+        "Positive Praise": 0.8108
+      }
+    },
+    "ce_weighted": {
+      "val_macro_f1": 0.6444,
+      "accuracy": 0.703,
+      "macro_f1": 0.6555,
+      "per_class_f1": {
+        "Bug Report": 0.7018,
+        "Feature Request": 0.5357,
+        "UX Feedback": 0.563,
+        "Positive Praise": 0.8216
+      }
+    },
+    "focal_only": {
+      "val_macro_f1": 0.6395,
+      "accuracy": 0.7091,
+      "macro_f1": 0.6472,
+      "per_class_f1": {
+        "Bug Report": 0.7149,
+        "Feature Request": 0.4727,
+        "UX Feedback": 0.5758,
+        "Positive Praise": 0.8254
+      }
+    },
+    "focal_weighted": {
+      "val_macro_f1": 0.6626,
+      "accuracy": 0.703,
+      "macro_f1": 0.6473,
+      "per_class_f1": {
+        "Bug Report": 0.7022,
+        "Feature Request": 0.5161,
+        "UX Feedback": 0.5455,
+        "Positive Praise": 0.8254
+      }
+    }
+  },
+  "S2_one_vs_rest": {
+    "per_class_binary_val": {
+      "Bug Report": 0.8311,
+      "Feature Request": 0.7981,
+      "UX Feedback": 0.7205,
+      "Positive Praise": 0.8979
+    },
+    "combined": {
+      "val_macro_f1": 0.7153,
+      "accuracy": 0.7061,
+      "macro_f1": 0.6768,
+      "per_class_f1": {
+        "Bug Report": 0.6756,
+        "Feature Request": 0.6087,
+        "UX Feedback": 0.6324,
+        "Positive Praise": 0.7905
+      }
+    }
+  },
+  "S3_confident_learning": {
+    "paper": "Northcutt et al., JAIR 2021 (arXiv:1911.00068), via cleanlab",
+    "n_flagged": 366,
+    "pct_flagged": 23.77,
+    "clean_train_rows": 1174,
+    "accuracy": 0.697,
+    "macro_f1": 0.6362,
+    "per_class_f1": {
+      "Bug Report": 0.7,
+      "Feature Request": 0.4583,
+      "UX Feedback": 0.5816,
+      "Positive Praise": 0.8048
+    }
+  },
+  "S3b_test_label_audit": {
+    "n_flagged": 81,
+    "pct_flagged": 24.55,
+    "note": "DIAGNOSTIC ONLY -- no test label was changed or removed."
+  },
+  "S4_tapt": {
+    "paper": "Gururangan et al., ACL 2020 (arXiv:2004.10964)",
+    "tapt_epochs": 5,
+    "accuracy": 0.7,
+    "macro_f1": 0.6368,
+    "per_class_f1": {
+      "Bug Report": 0.6992,
+      "Feature Request": 0.4583,
+      "UX Feedback": 0.5606,
+      "Positive Praise": 0.8291
+    }
+  },
+  "S5_seed_ensemble": {
+    "paper": "Lakshminarayanan et al., NeurIPS 2017",
+    "_seeds_note": "The seeds listed below are the seeds the loop INTENDED. They do not take effect: set_seed(s=SEED) binds its default at definition time and finetune() calls set_seed() with no argument, so all five runs actually use seed 42. The spread across individual_test_macro_f1 is therefore fixed-seed run-to-run variation (unseeded MPS reductions, dataloader ordering, kernel selection), not seed sensitivity. Table 5a of Final_Report.md reads it correctly as fixed-seed variance; this field is kept as it ran. See notebook 08, section S5.",
+    "seeds": [
+      42,
+      1,
+      7,
+      123,
+      2024
+    ],
+    "individual_test_macro_f1": [
+      0.5986,
+      0.6507,
+      0.6317,
+      0.6364,
+      0.6373
+    ],
+    "mean": 0.6309,
+    "std": 0.0174,
+    "ensemble": {
+      "accuracy": 0.697,
+      "macro_f1": 0.6383,
+      "per_class_f1": {
+        "Bug Report": 0.6979,
+        "Feature Request": 0.5085,
+        "UX Feedback": 0.521,
+        "Positive Praise": 0.8259
+      }
+    }
+  },
+  "S6_ovr_plus_ensemble": {
+    "seeds": [
+      42,
+      1,
+      7
+    ],
+    "per_head_val": {
+      "Bug Report": [
+        0.8462,
+        0.828,
+        0.8285
+      ],
+      "Feature Request": [
+        0.7859,
+        0.7846,
+        0.7781
+      ],
+      "UX Feedback": [
+        0.7385,
+        0.7483,
+        0.7543
+      ],
+      "Positive Praise": [
+        0.8946,
+        0.8966,
+        0.9015
+      ]
+    },
+    "ensemble": {
+      "accuracy": 0.7394,
+      "macro_f1": 0.7124,
+      "per_class_f1": {
+        "Bug Report": 0.7162,
+        "Feature Request": 0.6792,
+        "UX Feedback": 0.624,
+        "Positive Praise": 0.83
+      }
+    }
+  }
+}

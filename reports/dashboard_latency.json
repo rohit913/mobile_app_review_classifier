@@ -1,0 +1,40 @@
+{
+  "device": "mps",
+  "n_reviews": 20,
+  "sampling": "5 reviews per category, stratified from test.csv, random_state=42",
+  "lime_num_samples": 500,
+  "note": "Model load time excluded (Streamlit caches models via @st.cache_resource, so it is paid once per session, not per review). One untimed warm-up inference runs before the loop, so no timed review pays one-off initialisation cost; all reviews reported here are timed.",
+  "classify_only_seconds": {
+    "mean": 0.074,
+    "median": 0.041,
+    "min": 0.018,
+    "max": 0.17
+  },
+  "lime_only_seconds": {
+    "mean": 2.294,
+    "median": 1.751,
+    "min": 0.538,
+    "max": 7.506
+  },
+  "shap_only_seconds": {
+    "mean": 2.719,
+    "median": 2.428,
+    "min": 0.288,
+    "max": 7.305
+  },
+  "default_path_classify_plus_lime_seconds": {
+    "mean": 2.367,
+    "median": 1.839,
+    "min": 0.661,
+    "max": 7.552
+  },
+  "full_path_classify_plus_lime_plus_shap_seconds": {
+    "mean": 5.087,
+    "median": 4.149,
+    "min": 0.954,
+    "max": 14.857
+  },
+  "criterion_seconds": 10.0,
+  "default_path_meets_criterion": true,
+  "full_path_meets_criterion": false
+}

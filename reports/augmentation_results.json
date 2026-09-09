@@ -1,0 +1,14 @@
+{
+  "baseline_bert_category_accuracy": 0.7212121212121212,
+  "baseline_bert_category_macro_f1": 0.6753887803220903,
+  "augmented_bert_category_accuracy": 0.7151515151515152,
+  "augmented_bert_category_macro_f1": 0.6755710981102375,
+  "augmented_per_class_f1": {
+    "Bug Report": 0.7206477732793523,
+    "Feature Request": 0.6538461538461539,
+    "UX Feedback": 0.5132743362831859,
+    "Positive Praise": 0.8145161290322581
+  },
+  "improved": true,
+  "augmentation_scope": "Feature Request (all 130 rows) + UX Feedback (200-row random subsample)"
+}

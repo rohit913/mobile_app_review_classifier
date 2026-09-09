@@ -37097,17 +37097,17 @@
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Bug Report", "Feature Request", "UX Feedback", "Positive Praise"], [0.6261743903160095, 0.03167599439620972, 0.1852136254310608, 0.15693596005439758]);
+            var pp = new lime.PredictProba(pp_svg, ["Bug Report", "Feature Request", "UX Feedback", "Positive Praise"], [0.8145666718482971, 0.017903102561831474, 0.06732446700334549, 0.10020571947097778]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Bug Report", "Feature Request", "UX Feedback", "Positive Praise"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["crashing", 0.10518162311691011], ["update", 0.05037561745253927], ["keeps", -0.04475764091958774], ["latest", 0.03864427442873348], ["app", 0.012650972350289003]], 0, exp_div);
+                exp.show([["crashing", 0.1697780202145311], ["keeps", -0.04937507849030196], ["app", -0.030291996859838615], ["latest", 0.024978910770092764], ["update", 0.012734707245570728]], 0, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["crashing", 24, 0.10518162311691011], ["update", 7, 0.05037561745253927], ["keeps", 18, -0.04475764091958774], ["latest", 0, 0.03864427442873348], ["app", 14, 0.012650972350289003]], 0, "latest update app keeps crashing?????", raw_div, true);
+            exp.show_raw_text([["crashing", 24, 0.1697780202145311], ["keeps", 18, -0.04937507849030196], ["app", 14, -0.030291996859838615], ["latest", 0, 0.024978910770092764], ["update", 7, 0.012734707245570728]], 0, "latest update app keeps crashing?????", raw_div, true);
             
         </script>
         </body></html>

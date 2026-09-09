@@ -1,5 +1,8 @@
 Model,Accuracy,Macro F1,Notes
+Naive Bayes,0.6030,0.5740,TF-IDF + Multinomial Naive Bayes
+Random Forest,0.6788,0.6064,TF-IDF + Random Forest
 SVM Baseline,0.6970,0.6596,"TF-IDF + linear SVM, class_weight=balanced"
-BERT (fine-tuned),0.7364,0.7075,"LR search (1e-5/2e-5/3e-5), focal loss + class weights, warmup, early stopping, no-decay bias/LayerNorm"
-LLaMA-3 (zero-shot),0.6900,0.6210,No examples given
-LLaMA-3 (few-shot),0.6400,0.5680,1 example per class given
+"BERT (category, fine-tuned)",0.7212,0.6754,"LR search (1e-5/2e-5/3e-5), best 2e-05; focal loss + class weights, warmup, early stopping, no-decay bias/LayerNorm"
+"BERT (sentiment, fine-tuned)",0.8091,0.6768,"Same recipe as category model, trained on sentiment labels; best LR 1e-05"
+LLaMA-3 (zero-shot),0.6900,0.6210,"No examples given; llama-3.3-70b-versatile, since retired on Groq - value from archived run"
+LLaMA-3 (few-shot),0.6400,0.5680,"1 example per class; llama-3.3-70b-versatile, since retired on Groq - value from archived run"

@@ -2,20 +2,20 @@ review_id,true_category,predicted_category,shap_top_words,lime_top_words,shared_
 26d100a3-587f-4253-b6b7-2f45d4b9db86,Bug Report,Bug Report,"app, crashing, keeps, latest, update","app, crashing, keeps, latest, update","app, crashing, keeps, latest, update",1.0
 bdf8ca1d-9ea2-450d-a2ed-ce0cb1e07681,Positive Praise,Positive Praise,"for, go, it, me, trust","for, go, it, me, trust","for, go, it, me, trust",1.0
 126ff05e-baf1-49e7-b073-2b232969c6dd,Positive Praise,Positive Praise,"for, i, it, school, use","for, i, it, school, use","for, i, it, school, use",1.0
-dd292374-4eea-4535-b9cc-256638d551a5,Bug Report,Feature Request,"email, is, option, there, via","convenient, email, for, is, option, reminder, there, very, via, whatsapp","email, is, option, there, via",1.0
-53404cfc-bdbc-4c87-b17c-8104f428c0dc,Feature Request,Bug Report,"don, option, see, still, t","delete, don, logged, meal, option, see, still, t, to, which","don, option, see, still, t",1.0
-6d6f9b8b-e51f-46bf-9c4c-44d9e28bef13,Bug Report,Bug Report,"at, payment, since, try, x","6, app, but, card, details, i, payment, section, try, when","payment, try",0.4
-f9c72bb4-1200-41f0-b156-2d4c2183a00a,UX Feedback,UX Feedback,"have, most, of, pay, sadly","access, calm, category, most, of, pay, sadly, the, to, you","most, of, pay, sadly",0.8
-7ef2edd5-f28a-4791-8355-d4494ddeadbb,Bug Report,Bug Report,"a, app, bugs, fix, its","5, app, bugs, fix, i, incredible, it, its, some, star","app, bugs, fix, its",0.8
-7922b1a9-953e-4792-94ae-9934b118514b,Positive Praise,UX Feedback,"but, had, laughing, review, to","10, awake, but, i, leave, review, service, struggling, terms, to","but, review, to",0.6
-bfb8083c-a9bc-4383-841a-040fe4d0c8eb,Positive Praise,Positive Praise,"all, are, arranged, awesome, things","all, are, arranged, awesome, so, things","all, are, arranged, awesome, things",1.0
-68cce457-5dd1-4a52-b260-1689eba6b545,Positive Praise,Positive Praise,"corporate, for, fulness, mind, stars","4, corporate, for, mindfulness, stars","corporate, for, stars",0.6
-31dfc7de-e028-404a-aa98-5c51d26ecdb6,Bug Report,Bug Report,"always, app, keeps, problem, reset","and, extremely, frustrating, i, it, keeps, logging, problem, reset, try","keeps, problem, reset",0.6
-ce74ab5c-4dec-435c-94e9-421a4503215d,UX Feedback,UX Feedback,"camera, can, t, verification, worst","experience, i, is, messing, part, past, spent, t, the, worst","t, worst",0.4
-df8df16c-66ba-449e-84df-522240fceb81,Positive Praise,Positive Praise,"almost, anything, call, good, i","almost, anything, app, but, call, good, hear, i, in, is","almost, anything, call, good, i",1.0
-3d0941fc-ce43-4993-977f-9a273af993e9,Bug Report,Bug Report,"bugs, no, not, properly, responds","and, andriod, bug, bugs, invested, microsoft, no, not, one, responds","bugs, no, not, responds",0.8
-952bb920-58fa-4975-b11e-902be446b514,UX Feedback,Bug Report,"music, my, see, t, update","and, can, in, music, s, see, t, them, this, update","music, see, t, update",0.8
-12827002-caae-45be-b7a6-b232a82d8b2d,Feature Request,Feature Request,"app, confused, i, m, wish","app, before, confused, feature, i, if, purchasing, to, todoist, wish","app, confused, i, wish",0.8
-fc4cfe69-27e9-427b-a6c4-b0f8c5919bb9,UX Feedback,UX Feedback,"deleted, pay, realized, recently, simply","acount, deleted, instantly, items, my, pay, realized, simply, to, you","deleted, pay, realized, simply",0.8
-2bc78b24-7360-4aa4-ad0e-d9e48a0c81d8,Positive Praise,Positive Praise,"and, communicate, day, help, throughout","and, communicate, coworkers, day, help, my, teams, the, throughout","and, communicate, day, help, throughout",1.0
-4cf781fa-8bdb-44c9-b1c4-bce2e5c7283e,Positive Praise,Positive Praise,"pal, to, y","a, compliments, forward, get, great, heard, hoping, i, im, pal",pal,0.333
+dd292374-4eea-4535-b9cc-256638d551a5,Bug Report,Feature Request,"an, email, option, there, via","an, is, option, reminder, there","an, option, there",0.6
+53404cfc-bdbc-4c87-b17c-8104f428c0dc,Feature Request,Bug Report,"delete, don, option, still, t","delete, don, logged, still, t","delete, don, still, t",0.8
+6d6f9b8b-e51f-46bf-9c4c-44d9e28bef13,Bug Report,Bug Report,"3x, at, payment, since, try","i, payment, section, try, when","payment, try",0.4
+f9c72bb4-1200-41f0-b156-2d4c2183a00a,UX Feedback,UX Feedback,"access, of, pay, sadly, you","access, calm, pay, sadly, to","access, pay, sadly",0.6
+7ef2edd5-f28a-4791-8355-d4494ddeadbb,Bug Report,Bug Report,"5, fix, incredible, its, star","5, bugs, fix, incredible, star","5, fix, incredible, star",0.8
+7922b1a9-953e-4792-94ae-9934b118514b,Positive Praise,Bug Report,"had, not, thought, tin, to","awake, ended, had, review, story",had,0.2
+bfb8083c-a9bc-4383-841a-040fe4d0c8eb,Positive Praise,Positive Praise,"all, are, arranged, awesome, things","all, arranged, awesome, so, things","all, arranged, awesome, things",0.8
+68cce457-5dd1-4a52-b260-1689eba6b545,Positive Praise,Positive Praise,"4, corporate, for, mindfulness, stars","4, corporate, for, mindfulness, stars","4, corporate, for, mindfulness, stars",1.0
+31dfc7de-e028-404a-aa98-5c51d26ecdb6,Bug Report,Bug Report,"app, frustrating, keeps, problem, reset","and, extremely, frustrating, problem, reset","frustrating, problem, reset",0.6
+ce74ab5c-4dec-435c-94e9-421a4503215d,UX Feedback,UX Feedback,"can, t, verification, worst","experience, spent, t, the, worst","t, worst",0.5
+df8df16c-66ba-449e-84df-522240fceb81,Positive Praise,Positive Praise,"almost, anything, good, i, is","app, but, good, hear, i","good, i",0.4
+3d0941fc-ce43-4993-977f-9a273af993e9,Bug Report,Bug Report,"bugs, not, responds, seems, to","and, bug, bugs, invested, no",bugs,0.2
+952bb920-58fa-4975-b11e-902be446b514,UX Feedback,Bug Report,"can, my, see, t, update","music, s, t, them, update","t, update",0.4
+12827002-caae-45be-b7a6-b232a82d8b2d,Feature Request,Feature Request,"before, confused, i, purchasing, wish","confused, feature, i, todoist, wish","confused, i, wish",0.6
+fc4cfe69-27e9-427b-a6c4-b0f8c5919bb9,UX Feedback,Bug Report,"acount, deleted, now, pay, realized","deleted, instantly, pay, realized, recently","deleted, pay, realized",0.6
+2bc78b24-7360-4aa4-ad0e-d9e48a0c81d8,Positive Praise,Positive Praise,"and, communicate, day, help, throughout","and, communicate, help, teams, throughout","and, communicate, help, throughout",0.8
+4cf781fa-8bdb-44c9-b1c4-bce2e5c7283e,Positive Praise,Positive Praise,"ay, compliments, hoping, pal, to","compliments, forward, great, im, to","compliments, to",0.4
